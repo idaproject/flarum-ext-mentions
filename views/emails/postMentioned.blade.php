@@ -1,6 +1,6 @@
-Hey {{ $user->username }}!
+Привет, {{ $user->username }}!
 
-{{ $blueprint->reply->user->username }} replied to your post (#{{ $blueprint->post->number }}) in {{ $blueprint->post->discussion->title }}.
+{{ $blueprint->reply->user->username }} ответил на ваше сообщение (#{{ $blueprint->post->number }}) в дискуссии {{ $blueprint->post->discussion->title }}.
 
 {{ app()->url() }}/d/{{ $blueprint->reply->discussion_id }}/{{ $blueprint->reply->number }}
 
